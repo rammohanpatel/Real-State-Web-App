@@ -3,6 +3,7 @@ import React from 'react'
 import Hero from './Hero'
 import Image from 'next/image'
 import Link from 'next/link'
+import BelowHero from './BelowHero'
 
 const HomePage = () => {
     return (
@@ -40,7 +41,7 @@ const HomePage = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 mt-20 max-w-4xl mx-auto">
+            {/* <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 mt-20 max-w-4xl mx-auto">
                 <Link href="/details" className='relative w-full md:max-w-xl mx-auto'>
                     <Image className="h-96 w-full object-cover rounded-md transform transition duration-500 hover:scale-110" src="/client.webp" width={500} height={500} alt="Random image" />
                     <div className="absolute inset-0 bg-gray-700 opacity-60 rounded-md"></div>
@@ -55,8 +56,10 @@ const HomePage = () => {
                         <h2 className="text-white text-center text-3xl font-bold">Who we serve</h2>
                     </div>
                 </Link>
-            </div>
+            </div> */}
+            <BelowHero />   
         </div>
+
     )
 }
 

@@ -1,12 +1,12 @@
+// import client from '../../lib/client';
 
-import React from 'react'
+// const details = ({ data }) => {
+//   return (
+//     <div>
+//       <h1>{data.title}</h1>
+      
+//     </div>
+//   );
+// };
 
-const details = () => {
-  return (
-    <div>
-      This is the details page
-    </div>
-  )
-}
-
-export default details
+// export default details;

@@ -45,22 +45,22 @@ function NavBar() {
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="   py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="/about" onClick={() => setNavbar(!navbar)}>
+                  <Link href="/" onClick={() => setNavbar(!navbar)}>
                     How we help clients
                   </Link>
                 </li>
                 <li className="   py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="#blog" onClick={() => setNavbar(!navbar)}>
+                  <Link href="/our-insights" onClick={() => setNavbar(!navbar)}>
                     Our Insights
                   </Link>
                 </li>
                 <li className="   py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="#contact" onClick={() => setNavbar(!navbar)}>
+                  <Link href="/our-people" onClick={() => setNavbar(!navbar)}>
                     Our People
                   </Link>
                 </li>
                 <li className="   py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="#projects" onClick={() => setNavbar(!navbar)}>
+                  <Link href="/contact-us" onClick={() => setNavbar(!navbar)}>
                     Contact Us
                   </Link>
                 </li>
