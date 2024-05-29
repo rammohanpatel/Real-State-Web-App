@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import BlogCard from "@/components/BlogCard";
 import Footer from "@/components/Footer";
 import OurInsightCard from "@/components/OurInsight";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -49,7 +50,7 @@ export default function Home() {
     fetchData();
   }, []);
 
-  console.log('Blogs : ',blogs)
+  console.log('Blogs : ', blogs)
 
   return (
     <div>
@@ -59,25 +60,35 @@ export default function Home() {
       <div>
         <section className="m-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {
-            blogs.map((blog,index)=>(
+            blogs.map((blog, index) => (
               <BlogCard blog={blog} key={index} />
             ))
           }
 
         </section>
       </div>
-      
+
       <div>
         <h1 className="text-3xl font-bold text-center mt-28 mb-8 text-primary">Featured Insights</h1>
         <section className="m-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {
-            insights.map((insight,index)=>(
+            insights.map((insight, index) => (
               <OurInsightCard blog={insight} key={index} />
             ))
           }
 
         </section>
       </div>
+      <div className="flex justify-center">
+        <Link href="/our-insights">
+          <button class="bg-transparent hover:bg-blue-800 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+            View All Insights
+          </button>        
+          </Link>
+      </div>
+
+
+
 
       <Footer />
     </div>
