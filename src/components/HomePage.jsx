@@ -58,6 +58,7 @@ const HomePage = () => {
                 </Link>
             </div> */}
             <BelowHero />   
+            
         </div>
 
     )

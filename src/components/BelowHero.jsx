@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 const BelowHero = () => {
   return (
-    <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
+    <section className="text-gray-600 body-font mt-4 ">
+        <div className="container px-5 py-24 mx-auto bg-red-200">
             <h1 className="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20">Raw Denim Heirloom Man Braid
             <br className="hidden sm:block"/>Selfies Wayfarers
             </h1>

@@ -6,7 +6,7 @@ import { PortableText } from "@portabletext/react";
 // To create static pages for dynamic routes
 export default async function page({ params: { slug } }) {
 
-  const query = `*[_type=='post' && slug.current==$slug]{
+  const query = `*[_type=='insight' && slug.current==$slug]{
     title,body,image,summary,
     "documentURL":document.asset->url     
   }[0]`;
