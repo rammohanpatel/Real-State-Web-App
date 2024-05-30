@@ -18,7 +18,7 @@ export default function BlogCard({blog}) {
 
       {/* Title and Summary */}
       <div className="flex flex-col justify-between gapx-y-4  p-4">
-        <Link href={`/blog/${blog.slug}`}>
+        <Link href={`/how-we-help-clients/${blog.slug}`}>
             <h2 className="text-lg font-semibold line-clamp-2 text-dark hover:text-sky-700 hover:underline  dark:text-light leading-tight mb-2">
             {blog.title} <span className="text-blue-800 font-extrabold text-lg"> {'>'} </span>
             </h2>
